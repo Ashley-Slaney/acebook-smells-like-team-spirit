@@ -4,12 +4,10 @@ class PostsController < ApplicationController
   end
 
   def create
-    # p render plain: params[:post].inspect
+    puts "USER ID #{session[:user_id]}"
+    p session[:user_id]
+    # p @user = User.find_by(username: params[:username])
     @post = Post.create!(post_params)
-    #p "images"
-    #p @post.image.attach(params[:image])
-    #@post.save
-    #p params[:post][:image]
     redirect_to posts_url
   end
 
@@ -18,7 +16,9 @@ class PostsController < ApplicationController
   end
 
   def like
-    
+    @user_id = session[:user_id]
+    @post_id = params[:id]
+    redirect_to '/posts'
   end
 
   private
