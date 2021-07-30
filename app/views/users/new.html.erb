@@ -1,15 +1,36 @@
-<li><%= link_to 'Homepage', '/posts', method: :get%></li>
-<li class="right_links"><%= link_to 'Login', '/login', method: :get%></li>
 
-<br>
+<div class="container">
+<div class="row">
 
-<h1>Sign Up</h1>
-<%= form_for @user do |f|%>
-  <%= f.label :username%><br>
-  <%= f.text_field :username%><br>
-  <%= f.label :password%><br>
-  <%= f.password_field :password%><br><br>
-  <%= f.label "Profile Picture" %><br>
-  <%= f.file_field :avatar %><br><br>
-  <%= f.submit %>
-<%end%>
+  <div class="col-6">
+    <img src="https://i.imgur.com/8RKTBwB.png" alt="">
+  </div>
+
+
+
+      <div class="col-4 ">
+        <br> <br>
+      <h1 class="d-flex justify-content-center">Sign Up</h1>
+
+      <br>
+   <div class="d-flex justify-content-center">
+    <%= form_for @user do |f|%>
+      <%= f.label :username%><br>
+      <%= f.text_field :username%><br>
+      <br>
+      <%= f.label :password%><br>
+      
+      <%= f.password_field :password%><br>
+      <%= f.label "Profile Picture" %><br>
+      <%= f.file_field :avatar %><br><br>
+      <br>
+      <%= f.submit %>
+    <%end%></div>
+      
+      
+      </div>
+
+</div>
+
+</div>
+
