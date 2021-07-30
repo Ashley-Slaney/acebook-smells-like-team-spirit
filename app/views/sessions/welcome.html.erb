@@ -13,17 +13,17 @@
    <div class="container">
 
   <% if logged_in? %>
-    <li><%= link_to 'Posts', '/posts', method: :get%></li>
-    <li class="right_links"><%= link_to 'Logout', '/logout', method: :post%></li>
-    <% if current_user.avatar.attached? %>
-      <li class="right_links"><img src="<%=(url_for(current_user.avatar))%>" width="25" height="30"><li>
-    <% end %>
-    <li class="right_links">🟢 Online: <%= current_user.username %></li>
+  
+  <br>  <br>  <br>
+    <h1 class="d-flex justify-content-center">♠️ Welcome, <%= current_user.username.capitalize %> ♠️</h1>
+    <p class="d-flex justify-content-center online-photo">🟢 Online: <%= current_user.username.capitalize %> <% if current_user.avatar.attached? %>
+      <img class="online-photo" src="<%=(url_for(current_user.avatar))%>" width="25" height="30">
+    <% end %></p>
     <br>
-    <h1>♠️ Welcome, <%= current_user.username %></h1>
-    <% if current_user.avatar.attached? %>
-      <img src="<%=(url_for(current_user.avatar))%>">
-    <% end %>
+    <p class="d-flex justify-content-center"><%= link_to 'Posts', '/posts', method: :get , class:"btn btn-outline-primary"%></p>
+    <p class="d-flex justify-content-center"><%= link_to 'Logout', '/logout', method: :post , class:"btn btn-outline-primary"%></p>
+    <br>
+   
   <% end %>
 
   <% if logged_in? == false %>

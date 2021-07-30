@@ -46,7 +46,6 @@ ActiveRecord::Schema.define(version: 2021_07_26_133835) do
 
   create_table "posts", force: :cascade do |t|
     t.string "message"
-    t.string "images"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
