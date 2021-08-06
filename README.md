@@ -16,7 +16,7 @@ The features we implemented to our project were:
 Firstly, in our group we came together to discuss how we wanted to progress with this project, what we wanted to learn and what our process would look like. We decided that because none of us had used Rails before, we would self study and get familiar with Rails for a few days before we decided to make a start with the project. 
 
 Once we felt happy with our knowledge of Rails, we grouped up again and started to plan out the project by creating user stories. These were written onto a trello board that we created, which split up into pairs over the duration of the project and worked on a different ticket for each pair. Image of our trello board:
-![Trello Board]('./img/trello_example.png']
+![Trello Board]('./img/trello_example.png')
 
 Each morning we started the day with a stand-up to discuss what we were going to work on and update the trello board before we split into our pairs and started on our tasks for the morning. After lunch we had another stand-up to discuss the progress we made during the morning session, ask for help if we hit any blockers and talk about our tasks for the afternoon. Before we finished for the day we would have a retro to discuss how our day went and once again, talk about any blockers that we might have come across. 
 
