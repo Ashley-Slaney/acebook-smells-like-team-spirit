@@ -32,6 +32,6 @@ If you want to run the unit & feature tests for this program, run ```rspec```
 To view the project - in your browser, enter this URL ```http://localhost:3000/```
 
 ## Technologies used
-Languages & Frameworks - Ruby, Rails, HTML, CSS & Bootstrap
-Database - PostgreSQL
-Testing Frameworks - RSpec, Capybara
+- Languages & Frameworks - Ruby, Rails, HTML, CSS & Bootstrap
+- Database - PostgreSQL
+- Testing Frameworks - RSpec, Capybara
